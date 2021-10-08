@@ -1,0 +1,143 @@
+:root {
+  font-size: calc(0.9375em + 0.8vw);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 50em) {
+  :root {
+    font-size: calc(0.6em + 1vw);
+  }
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-height: 100vh;
+}
+
+.page-main {
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.error {
+  padding: 1em 0 3em;
+}
+
+.error__title {
+  color: #333333;
+  font-size: 24px;
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+}
+
+.error__body {
+  margin-top: 3.5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 50em) {
+  .error__body {
+    margin-top: 3em;
+    flex-direction: row;
+  }
+}
+
+.error__figure {
+  padding: 0 1em;
+}
+
+@media (min-width: 50em) {
+  .error__figure {
+    padding: 0;
+    width: 50%;
+  }
+}
+
+.error__image {
+  max-width: 100%;
+  width: 22.5em;
+}
+
+.error__content {
+  margin-top: 3.35em;
+}
+
+@media (min-width: 50em) {
+  .error__content {
+    margin-top: 0.5em;
+    width: 50%;
+  }
+}
+.error__heading {
+  font-size: 2.6666666666666665rem;
+  line-height: 1.47916666667;
+  letter-spacing: -0.035em;
+  color: #333333;
+  max-width: 9.15625em;
+}
+
+@media (min-width: 50em) {
+  .error__heading {
+    line-height: 1.484375;
+  }
+}
+
+.error__description {
+  margin-top: 1.66em;
+  font-weight: 400;
+  max-width: 16em;
+  color: #4f4f4f;
+}
+
+.error__button {
+  margin-top: 4.7143em;
+  font-size: 0.7777777777777778rem;
+  font-weight: inherit;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  padding: 1em 2em;
+  background: #333333;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: 50em) {
+  .error__button {
+    font-size: 0.5833333333333334rem;
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 14px;
+  color: #bdbdbd;
+  padding: 1em;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.attribution a {
+  font-size: inherit;
+  font-weight: 700;
+  color: inherit;
+}
+
+.attribution a:last-child {
+  font-weight: 500;
+  text-decoration: none;
+}
